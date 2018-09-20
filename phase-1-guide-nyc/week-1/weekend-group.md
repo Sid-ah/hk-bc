@@ -1,4 +1,5 @@
 ## Weekend Group Project
+
 ### Sudoku
 
 ### Core
@@ -9,11 +10,10 @@
 - In hindsight, what would you do differently?
 - Compare and contrast working alone, in a pair and in a group. What are the challenges and benefits of each?
 
-
 **Challenges**
 
-- [Sudoku](../../../../sudoku-challenge)
+- [Sudoku](../../../../tree/master/sudoku-challenge)
 
 ### Additional Resources
 
-- [Pseudocode example](../resources/translate_to_pseudocode.rb)
+- [Pseudocode example](../tree/master/resources/translate_to_pseudocode.rb)

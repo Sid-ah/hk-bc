@@ -1,4 +1,5 @@
 ## Wednesday
+
 ### Solo Timed Challenge & OOP Practice
 
 ### Core
@@ -10,13 +11,15 @@
 
 **Solo Challenges**
 
-- [For new students](../../../../algorithms-and-oo-checkpoint-challenge)
-- [For students who repeated](../../../../alt-algorithms-and-oo-checkpoint-challenge)
+- [For new students](../../../../tree/master/algorithms-and-oo-checkpoint-challenge)
+- [For students who repeated](../../../../tree/master/alt-algorithms-and-oo-checkpoint-challenge)
 
 **Challenges**
-- [Hospital Interface](../../../../hospital-interface-challenge)
+
+- [Hospital Interface](../../../../tree/master/hospital-interface-challenge)
 
 **Prep for Tomorrow**
+
 - Daily retros
   - MVC is a widely used software engineering pattern. How could this pattern help you develop software?
   - What are some patterns you utilize in today's pairing session?
@@ -24,11 +27,13 @@
 ### Stretch
 
 **Challenges**
-- [Scraping HN 1](../../../../scraping-hn-1-building-objects-challenge)
-- [Scraping HN 2](../../../../scraping-hn-2-saving-to-csv-challenge)
-- [The Rational Numbers](../../../../the-rational-numbers-challenge)
+
+- [Scraping HN 1](../../../../tree/master/scraping-hn-1-building-objects-challenge)
+- [Scraping HN 2](../../../../tree/master/scraping-hn-2-saving-to-csv-challenge)
+- [The Rational Numbers](../../../../tree/master/the-rational-numbers-challenge)
 
 ### Additional Resources
+
 - [Your miyagi moment](http://techcrunch.com/2013/08/10/your-miyagi-moment/)
 - [DOM](http://www.w3.org/TR/DOM-Level-2-Core/introduction.html)
 - [Single Responsibility notes from Practical Object Oriented Design in Ruby](../resources/oop-single-responsibility-poodr.md)

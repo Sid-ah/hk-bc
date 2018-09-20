@@ -1,4 +1,5 @@
 ## Tuesday
+
 ### HTML, CSS, JavaScript, jQuery and a little bit of AJAX
 
 ### Core
@@ -11,18 +12,18 @@
 
 **Challenges - JavaScript**
 
-- [Style Editor](../../../../behavior-drill-style-editor-challenge)
-- [Tabbed Interface](../../../../behavior-drill-tabbed-interface-challenge)
-- [Adding Comments](../../../../behavior-drill-add-comments-challenge)
-- [Cheering Mascot Round Two](../../../../cheering-mascot-sinatra-2-asynchronous-forms-challenge)
+- [Style Editor](../../../../tree/master/behavior-drill-style-editor-challenge)
+- [Tabbed Interface](../../../../tree/master/behavior-drill-tabbed-interface-challenge)
+- [Adding Comments](../../../../tree/master/behavior-drill-add-comments-challenge)
+- [Cheering Mascot Round Two](../../../../tree/master/cheering-mascot-sinatra-2-asynchronous-forms-challenge)
 
 **Challenges - HTML / CSS**
 
-- [Layout Drill: Basic Form Styling](../../../../layout-drill-basic-form-styling-challenge)
+- [Layout Drill: Basic Form Styling](../../../../tree/master/layout-drill-basic-form-styling-challenge)
 - [Learn CSS Layout](http://learnlayout.com) **very very important**
-- [Layout Drill: Left-hand Navigation](../../../../layout-drill-left-hand-navigation-challenge)
-- [Layout Drill: Right-hand Navigation](../../../../layout-drill-right-hand-navigation-challenge)
-- [Layout Drill: Proper Typesetting](../../../../layout-drill-proper-typesetting-challenge)
+- [Layout Drill: Left-hand Navigation](../../../../tree/master/layout-drill-left-hand-navigation-challenge)
+- [Layout Drill: Right-hand Navigation](../../../../tree/master/layout-drill-right-hand-navigation-challenge)
+- [Layout Drill: Proper Typesetting](../../../../tree/master/layout-drill-proper-typesetting-challenge)
 
 **Prep for Tomorrow**
 
@@ -33,8 +34,8 @@
 
 **Challenges**
 
-- [Collapsible Side-Menu](../../../../behavior-drill-collapsible-side-menu-challenge)
-- [Client-Side Form Validations](../../../../behavior-drill-form-validation-challenge)
+- [Collapsible Side-Menu](../../../../tree/master/behavior-drill-collapsible-side-menu-challenge)
+- [Client-Side Form Validations](../../../../tree/master/behavior-drill-form-validation-challenge)
 - Go back to one of your CRUD apps from last week and style it!
 
 ### Additional Resources
@@ -52,6 +53,5 @@
 - [CSS Positioning](http://alistapart.com/article/css-positioning-101)
 - [Typesetting a Short Article with CSS](https://medium.com/designed-thought/99033116fe92)
 - [Pesticide](http://pesticide.io/) A stylesheet and Chrome extension to help with CSS debugging
-- [HTML & CSS Resources](../resources/jenmyers_a6bb9ea6233c6c5a9edb.md)
+- [HTML & CSS Resources](../tree/master/resources/jenmyers_a6bb9ea6233c6c5a9edb.md)
 - [Advanced CSS Talk](https://talks.devbootcamp.com/advanced-css-the-brain-bake)
-

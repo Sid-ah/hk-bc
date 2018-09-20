@@ -1,4 +1,5 @@
 ## Monday
+
 ### JavaScript Refresher
 
 ### Core
@@ -10,10 +11,10 @@
 
 **Challenges - JavaScript**
 
-- [JavaScript Roman Numerals](../../../../javascript-roman-numerals-challenge)
-- [JavaScript Todos](../../../../javascript-todos-1-0-core-features-challenge)
-- [Orange Trees](../../../../oojs-orange-tree-challenge)
-- [OOJS Bikes & Stations](../../../../oojs-bikes-and-stations-challenge)
+- [JavaScript Roman Numerals](../../../../tree/master/javascript-roman-numerals-challenge)
+- [JavaScript Todos](../../../../tree/master/javascript-todos-1-0-core-features-challenge)
+- [Orange Trees](../../../../tree/master/oojs-orange-tree-challenge)
+- [OOJS Bikes & Stations](../../../../tree/master/oojs-bikes-and-stations-challenge)
 
 **Prep for Tomorrow**
 

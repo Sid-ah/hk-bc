@@ -1,4 +1,5 @@
 ## Thursday
+
 ### Iteration and Recursion
 
 ### Core
@@ -10,35 +11,35 @@
 
 **Challenges**
 
-- [Algorithm Drill: Factorial](../../../../algorithm-drill-factorial-challenge)
-- [The Fibonacci Sequence](../../../../the-fibonacci-sequence-challenge)
-- [Recursion vs. Iteration: Benchmark it!](../../../../recursion-vs-iteration-benchmarking-it-challenge)
-- [Algorithm Drill: Linear Search](../../../../algorithm-drill-linear-search-challenge)
-- [Algorithm Drill: Binary Search](../../../../algorithm-drill-binary-search-challenge)
-- [Anagrams 1: Detecting Anagrams](../../../../anagrams-1-detecting-anagrams-challenge)
-- [Anagrams 2: Generating Anagrams](../../../../anagrams-2-generating-anagrams-challenge)
-- [Algorithm Drill: Prime Factors](../../../../algorithm-drill-prime-factors-challenge)
-- [More Recursion Practice](../../../../recursion)
+- [Algorithm Drill: Factorial](../../../../tree/master/algorithm-drill-factorial-challenge)
+- [The Fibonacci Sequence](../../../../tree/master/the-fibonacci-sequence-challenge)
+- [Recursion vs. Iteration: Benchmark it!](../../../../tree/master/recursion-vs-iteration-benchmarking-it-challenge)
+- [Algorithm Drill: Linear Search](../../../../tree/master/algorithm-drill-linear-search-challenge)
+- [Algorithm Drill: Binary Search](../../../../tree/master/algorithm-drill-binary-search-challenge)
+- [Anagrams 1: Detecting Anagrams](../../../../tree/master/anagrams-1-detecting-anagrams-challenge)
+- [Anagrams 2: Generating Anagrams](../../../../tree/master/anagrams-2-generating-anagrams-challenge)
+- [Algorithm Drill: Prime Factors](../../../../tree/master/algorithm-drill-prime-factors-challenge)
+- [More Recursion Practice](../../../../tree/master/recursion)
 
 **Prep for Tomorrow**
 
-
 - **Daily Retros**
+
   - Why would you use an array vs. a hash?
   - How is different working alone instead of with a pair? What's easier? What's harder?
 
-- [How to read a Stack Trace](../../../../debugging-drill-read-the-error-challenge) (re-read, no need to re-do the challenge itself)
-- [Debugging](../readings/debugging/README.md)
+- [How to read a Stack Trace](../../../../tree/master/debugging-drill-read-the-error-challenge) (re-read, no need to re-do the challenge itself)
+- [Debugging](../tree/master/readings/debugging/README.md)
 
 ### Stretch
 
 **Challenges**
 
-- [Ruby Meets Samuel Beckett](../../../../quad-ruby-meets-samuel-beckett-challenge)
-- [Linear vs. Binary Search](../../../../binary-vs-linear-searching-challenge)
-- [Prime Factors: Sieve of Eratosthenes](../../../../prime-factors-sieve-of-eratosthenes-challenge)
-- [Ruby Drill: Control Flow in Loops](../../../../ruby-drill-control-flow-in-loops-challenge)
-- [Calculating Subsets With Recursion](../../../../review-calculating-subsets-with-recursion-challenge)
+- [Ruby Meets Samuel Beckett](../../../../tree/master/quad-ruby-meets-samuel-beckett-challenge)
+- [Linear vs. Binary Search](../../../../tree/master/binary-vs-linear-searching-challenge)
+- [Prime Factors: Sieve of Eratosthenes](../../../../tree/master/prime-factors-sieve-of-eratosthenes-challenge)
+- [Ruby Drill: Control Flow in Loops](../../../../tree/master/ruby-drill-control-flow-in-loops-challenge)
+- [Calculating Subsets With Recursion](../../../../tree/master/review-calculating-subsets-with-recursion-challenge)
 
 ### Additonal Resources
 

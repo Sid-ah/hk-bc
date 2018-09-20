@@ -1,4 +1,5 @@
 ## Friday
+
 ### Group Project - 2/2
 
 ### Core
@@ -10,7 +11,7 @@
 
 **Group Project**
 
-- [DBC Overflow](../../../../sinatra-overflow-challenge)
+- [DBC Overflow](../../../../tree/master/sinatra-overflow-challenge)
 
 **Presentations Monday**
 

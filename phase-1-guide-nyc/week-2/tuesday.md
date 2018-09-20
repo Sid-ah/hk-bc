@@ -1,6 +1,6 @@
 ## Tuesday
-### Object Oriented Design with Inheritance and Composition
 
+### Object Oriented Design with Inheritance and Composition
 
 ### Core
 
@@ -12,11 +12,12 @@
 
 **Challenges**
 
-- [Parsing Data 1](../../../../parsing-data-1-csv-in-csv-out-challenge)
-- [Design Drill: Classical Inheritance](../../../../design-drill-classical-inheritance-challenge)
-- [Cookies and Ovens](../../../../cookies-and-ovens-challenge)
+- [Parsing Data 1](../../../../tree/master/parsing-data-1-csv-in-csv-out-challenge)
+- [Design Drill: Classical Inheritance](../../../../tree/master/design-drill-classical-inheritance-challenge)
+- [Cookies and Ovens](../../../../tree/master/cookies-and-ovens-challenge)
 
 **Prep for Tomorrow**
+
 - Daily retros
   - How does time pressure effect coding for you?
   - Do you have any strategies that you help you with time management?
@@ -25,9 +26,11 @@
 ### Stretch
 
 **Challenges**
-- [Parsing Data 2](../../../../parsing-data-2-csv-in-anything-out-challenge)
+
+- [Parsing Data 2](../../../../tree/master/parsing-data-2-csv-in-anything-out-challenge)
 
 ### Additional Resources
+
 - [Inheritance vs. composition](http://ruby.learncodethehardway.org/book/ex44.html)
-- [OO terminology](../resources/oop-terminology.md)
+- [OO terminology](../tree/master/resources/oop-terminology.md)
 - [OO Ruby basics](http://www.tutorialspoint.com/ruby/ruby_object_oriented.htm)

@@ -1,4 +1,5 @@
 ## Wednesday
+
 ### AJAX
 
 ### Core
@@ -10,9 +11,9 @@
 
 **Challenges**
 
-- [Lucky AJAX](../../../../lucky-ajax-challenge)
-- [AJAXifying Hacker News](../../../../ajaxifying-hacker-news-challenge)
-- [Simon Says](../../../../sinatra-json-challenge)
+- [Lucky AJAX](../../../../tree/master/lucky-ajax-challenge)
+- [AJAXifying Hacker News](../../../../tree/master/ajaxifying-hacker-news-challenge)
+- [Simon Says](../../../../tree/master/sinatra-json-challenge)
 
 **Prep for Tomorrow**
 
@@ -23,7 +24,7 @@
 
 **Challenges**
 
-- [CRUD & AJAX](../../../../ajax-review-challenge)
+- [CRUD & AJAX](../../../../tree/master/ajax-review-challenge)
 
 ### Additional Resources
 

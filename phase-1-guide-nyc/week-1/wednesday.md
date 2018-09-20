@@ -1,4 +1,5 @@
 ## Wednesday
+
 ### Testing with RSpec and Enumerables
 
 ### Core
@@ -11,38 +12,40 @@
 
 **Challenges**
 
-- [Pig Latin](../../../../pig-latin-challenge)
-- [Ruby Drill: Regular Expressions](../../../../ruby-drill-regular-expressions-challenge)
-- [Design Drill: Translate to Pseudocode](../../../../design-drill-translate-to-pseudocode-challenge)
-- [Benchmarking with Blocks](../../../../simple-benchmarking-with-blocks-challenge)
+- [Pig Latin](../../../../tree/master/pig-latin-challenge)
+- [Ruby Drill: Regular Expressions](../../../../tree/master/ruby-drill-regular-expressions-challenge)
+- [Design Drill: Translate to Pseudocode](../../../../tree/master/design-drill-translate-to-pseudocode-challenge)
+- [Benchmarking with Blocks](../../../../tree/master/simple-benchmarking-with-blocks-challenge)
 
-*Enumerables*
+_Enumerables_
 
-- [Ruby Drill: Enumerable Methods](../../../../ruby-drill-enumerable-methods-challenge)
-- [Implement Enumerable](../../../../implement-enumerable-challenge)
-- [Ruby Drill: Destructive Methods](../../../../ruby-drill-destructive-methods-challenge)
-- [Algorithm Drill: Shuffle](../../../../algorithm-drill-shuffle-challenge)
+- [Ruby Drill: Enumerable Methods](../../../../tree/master/ruby-drill-enumerable-methods-challenge)
+- [Implement Enumerable](../../../../tree/master/implement-enumerable-challenge)
+- [Ruby Drill: Destructive Methods](../../../../tree/master/ruby-drill-destructive-methods-challenge)
+- [Algorithm Drill: Shuffle](../../../../tree/master/algorithm-drill-shuffle-challenge)
 
 **Prep for Tomorrow**
+
 - **Daily Retros**
+
   - What benefits are there to doing something recursively vs. iteratively?
   - What do you do when you and your partner disagree?
 
 - [How Much Time Do We Truly Spend Coding?](https://talks.devbootcamp.com/how-much-time-do-we-truly-spend-coding) (Watch at least the first five minutes)
-- [Writing Readable Code](../readings/writing-readable-code/README.md)
+- [Writing Readable Code](../tree/master/readings/writing-readable-code/README.md)
 
 ### Stretch
 
 **Challenges**
 
-- [Words in a File](../../../../words-in-a-file-challenge)
-- [Combating Smells: Extract Method](../../../../combating-smells-extract-method-challenge)
+- [Words in a File](../../../../tree/master/words-in-a-file-challenge)
+- [Combating Smells: Extract Method](../../../../tree/master/combating-smells-extract-method-challenge)
 
 ### Additional Resources
 
-- [Code smells](../resources/code_smells.md)
-- [Readable code](../resources/readable_code.md)
-- [Regular Expressions](../resources/regular_expressions.md)
+- [Code smells](../tree/master/resources/code_smells.md)
+- [Readable code](../tree/master/resources/readable_code.md)
+- [Regular Expressions](../tree/master/resources/regular_expressions.md)
 - [Rubular.com](http://rubular.com/)
 - [Regexper.com](http://www.regexper.com/) - regexp visualizer
 - [Phillip Goldin on Distorted Views of the Self](http://www.youtube.com/watch?v=bKtBxxR0JRM#t=1243) (around 20:40)

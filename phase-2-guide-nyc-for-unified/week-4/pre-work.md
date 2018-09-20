@@ -1,16 +1,16 @@
 ## Weekend (before the phase starts)
 
-* [Intro to HTTP Video](https://talks.devbootcamp.com/intro-to-http)
-* [HTTP: The Protocol Every Web Developer Must Know](http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
-* [Intro to Sinatra Video](https://talks.devbootcamp.com/intro-to-sinatra-1)
-* [Tutorial: Snitching On Sinatra](../../../../snitching-on-sinatra-challenge) - Don't just read it, CODE ALONG THROUGH IT! It's the fastest way to truly learn this stuff.
-* EE Prep: Read & Reflect on following articles
+- [Intro to HTTP Video](https://talks.devbootcamp.com/intro-to-http)
+- [HTTP: The Protocol Every Web Developer Must Know](http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
+- [Intro to Sinatra Video](https://talks.devbootcamp.com/intro-to-sinatra-1)
+- [Tutorial: Snitching On Sinatra](../../../../tree/master/snitching-on-sinatra-challenge) - Don't just read it, CODE ALONG THROUGH IT! It's the fastest way to truly learn this stuff.
+- EE Prep: Read & Reflect on following articles
   - [If you think women in tech is just a pipeline problem, you haven’t been paying attention](https://medium.com/@racheltho/if-you-think-women-in-tech-is-just-a-pipeline-problem-you-haven-t-been-paying-attention-cb7a2073b996)
   - [Stop Acting So Surprised: How Microaggressions Enforce Stereotypes in Tech](https://modelviewculture.com/pieces/stop-acting-so-surprised-how-microaggressions-enforce-stereotypes-in-tech)
-* [ActiveRecord: Design Your Own Challenge](../../../../activerecord-design-your-own-challenge)
-* Resource: Getting Postgres installed on your computer
-    * [OS X](../resources/installing-postgres-mac.md)
-    * [Ubuntu](../resources/installing-postgres-ubuntu.md)
+- [ActiveRecord: Design Your Own Challenge](../../../../tree/master/activerecord-design-your-own-challenge)
+- Resource: Getting Postgres installed on your computer
+  - [OS X](../tree/master/resources/installing-postgres-mac.md)
+  - [Ubuntu](../tree/master/resources/installing-postgres-ubuntu.md)
 
 Welcome to Phase 2!
 
@@ -54,4 +54,3 @@ It's a beautiful weekend to code. And there's so much to learn! If you're not ac
 See you Monday!
 
 ---
-
