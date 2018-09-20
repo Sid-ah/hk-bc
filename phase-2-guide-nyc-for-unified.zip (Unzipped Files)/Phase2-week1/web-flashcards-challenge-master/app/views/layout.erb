@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="/css/application.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/application.js"></script>
+
+  <title></title>
+</head>
+<body>
+  <nav>
+  <div class="nav-wrapper blue darken-2"  >
+    <% if current_user %>
+    <a href="/" class="brand-logo">Flash Card Game</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="/user/logout">logout</a></li>
+      <li><a href="/user/<%= @current_user.id %>/profile">Profile</a></li>
+    </ul>
+    <% else %>
+    <a href="/" class="brand-logo">Flash Card Game</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down"></ul>
+    <% end %>
+  </div>
+</nav>
+  <%= yield %>
+</body>
+</html>

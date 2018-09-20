@@ -1,0 +1,2 @@
+def shuffle(array)
+end

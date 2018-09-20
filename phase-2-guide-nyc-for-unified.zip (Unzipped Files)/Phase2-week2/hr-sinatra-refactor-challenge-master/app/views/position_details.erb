@@ -1,0 +1,33 @@
+<h1>Position Details</h1>
+
+<h2><%= @user.name %> - <%= @position.title %></h2>
+<p>Started: <%= @position.started_at %></p>
+<p>Ended: <%= @position.ended_at %></p>
+<p>Salary: <%= @position.salary.annual_salary %></p>
+
+<h3>Evaluations</h3>
+<% @position.evaluations.each do |evaluation| %>
+  <div class="evalution">
+    <%= "PROBATION" if evaluation.probation %>
+    <p><%= evaluation.summary %></p>
+  </div>
+<% end %>
+
+<h3>Add a new evaluation</h3>
+<form action="/add-evalution/<%=@position.id%>" method="GET">
+  <p>
+    <label name="summary">Summary</label>
+    <input name="summary" type="text" />
+  </p>
+
+  <p>
+    <label name="probation">Probation?</label>
+    <input name="probation" type="text" />
+  </p>
+
+  <p>
+    <input type="submit" />
+  </p>
+
+</form>
+

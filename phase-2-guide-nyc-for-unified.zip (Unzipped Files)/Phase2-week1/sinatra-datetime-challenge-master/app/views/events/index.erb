@@ -1,0 +1,11 @@
+<main class="container">
+  <h1>Take a Look at these Upcoming Events</h1>
+
+  <ul class="flexbox event-card-list no-bullets">
+    <% @upcoming_events.each do |event| %>
+      <li class="event-card">
+        <%= erb :'events/_event_card', locals: { event: event } %>
+      </li>
+    <% end %>
+  </ul>
+</main>

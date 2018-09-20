@@ -1,0 +1,183 @@
+/* *       - https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+/* :after  - https://developer.mozilla.org/en-US/docs/Web/CSS/%3A%3Aafter*/
+/* :before - https://developer.mozilla.org/en-US/docs/Web/CSS/%3A%3Abefore */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  color: white;
+  background-color: #19ABB5;
+  background: url(../images/karaoke-background-teal.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+header {
+  overflow: auto;
+  padding-bottom: 1em;
+}
+
+footer {
+  padding: 2em 0;
+  position: absolute;
+  bottom: 0;
+}
+
+main {
+  padding-bottom: 3em;
+}
+
+a, a:visited {
+  color: #f7941e;
+  text-decoration: none;
+}
+
+  a:hover {
+    text-decoration: underline;
+    color: #f26539;
+  }
+
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1em 5em;
+  background:rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  font-size: 2em;
+  font-style: italic;
+  line-height: 1.75em
+}
+
+  a.title {
+    color: white;
+    text-decoration: none;
+  }
+
+.signup {
+  float: right;
+}
+
+.button {
+  background-color: #f7941e;
+  border-radius: .5em;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+  .button:hover {
+    background-color: #f26539;
+    text-decoration: none;
+  }
+
+  a.button {
+    color: white;
+  }
+
+.entries {
+  padding: 0;
+  list-style-type: none;
+  border: 1px solid #c8c8c8;
+  background: #fefefe;
+  border-radius: .5em;
+}
+
+.entry {
+  padding: 1em 0 2em 0;
+  text-align: center;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+  .entry:last-of-type {
+    border-bottom: none;
+  }
+
+.singer {
+  display: block;
+  font-size: 2em;
+  margin-bottom: .25em;
+  color: #5a5a5a;
+}
+
+.song-title {
+  display: block;
+  font-style: italic;
+  color: #828c91;
+}
+
+.entry-links {
+  margin-top: 1em;
+  padding: 0;
+  list-style-type: none;
+}
+
+.entry-link {
+  display: inline;
+  font-size: .8em;
+  margin: 0 .5em;
+}
+
+.legal {
+  color: #828c91;
+  font-style: italic;
+}
+
+.form-wrapper, .content-wrapper {
+  background: #fefefe;
+  border-radius: .5em;
+  padding: 2em;
+  color: #5a5a5a;
+}
+
+label {
+  display: block;
+  padding-bottom: .5em;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 1em;
+  border-radius: .25em;
+  padding: .25em;
+  outline: none;
+  border: 1px solid #828c91;
+}
+
+  input[type=submit] {
+    margin-top: 1em;
+    padding: 1.5em;
+    border: none;
+  }
+
+  input:focus {
+    border-color: #10abb5;
+  }
+
+.errors-wrapper {
+  color: #f26539;
+  margin-bottom: 2em;
+}
+
+.errors {
+  margin: 0;
+}

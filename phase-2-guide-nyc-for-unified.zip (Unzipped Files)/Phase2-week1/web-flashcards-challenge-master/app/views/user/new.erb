@@ -1,0 +1,44 @@
+<h1>Welcome New User:</h1>
+
+<h1>Please enter the following information:</h1>
+
+
+<%if @errors%>
+<% @errors.each do |error| %>
+ <ul>
+
+  <li> <%= error %> </li>
+
+</ul>
+<% end %>
+<%end%>
+
+<div class="row">
+    <form class="col s12" action='/user' method="post">
+      <div class="row">
+
+        <div class="input-field col s6">
+          <input placeholder="User Name" name="user[username]" id="username" type="text" class="validate">
+        </div>
+
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Email" name="user[email]" id="email" type="email" class="validate">
+          <label for="email"></label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+            <input placeholder="Password" name="user[password]" id="password" type="password" class="validate">
+          <label for="password"></label>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light  blue darken-2" type="submit" name="action">Sign Up
+         <i class="material-icons right"></i>
+       </button>
+    </form>
+
+
+  </div>

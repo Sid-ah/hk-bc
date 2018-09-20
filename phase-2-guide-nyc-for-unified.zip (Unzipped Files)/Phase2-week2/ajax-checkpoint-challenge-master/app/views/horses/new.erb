@@ -1,0 +1,32 @@
+<h1 class="big">Add a Horse</h1>
+
+<% if @horse.errors.any? %>
+  <section class="errors">
+    <ul>
+      <% @horse.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    </ul>
+  </section>
+<% end %>
+
+
+<form id="new-horse-form" class="flex flex-row" method="post" action="/horses">
+  <label class="input-group col-1-3">
+    <input id="horse-name" class="input-group-input" type="text" name="horse[name]" value="<%= @horse.try(:name) %>">
+    <span class="input-group-label">Name:</span>
+  </label>
+
+  <label class="input-group col-1-3">
+    <input id="horse-age" class="input-group-input" type="text" name="horse[age]" value="<%= @horse.try(:age) %>">
+    <span class="input-group-label">Age:</span>
+  </label>
+
+  <label class="input-group col-1-3">
+    <input id="horse-breed" class="input-group-input" type="text" name="horse[breed]" value="<%= @horse.try(:breed) %>">
+    <span class="input-group-label">Breed:</span>
+  </label>
+
+  <button type="submit" class="button dark">Submit</button>
+</form>
+

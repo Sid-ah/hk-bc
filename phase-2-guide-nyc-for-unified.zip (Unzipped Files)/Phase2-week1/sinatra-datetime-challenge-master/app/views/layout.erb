@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/css/vendor/jquery-ui.css">
+  <link rel="stylesheet" href="/css/vendor/jquery-ui.structure.css">
+  <link rel="stylesheet" href="/css/vendor/jquery.timepicker.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/application.css">
+
+  <script src="/js/vendor/jquery-2.2.3.min.js"></script>
+  <script src="/js/vendor/jquery-ui.js"></script>
+  <script src="/js/vendor/jquery.timepicker.js"></script>
+  <script src="/js/application.js"></script>
+
+  <title>Events!</title>
+</head>
+<body>
+  <div class="bg-white teal">
+    <%= erb :_header %>
+  </div>
+
+  <div class="flex-fill bg-blue white">
+    <%= yield %>
+  </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<a href="/entries/new" class="block button w-100 mar-t-2 mar-b-3 pad-2 round-1 text-c center">Write about Broccoli</a>
+
+<main role="main">
+  <ul class="entries-list no-bullets no-padding">
+    <% @entries.each do |entry| %>
+      <li class="entry-item pad-b-4">
+        <a href="/entries/<%= entry.id %>" class="entry-title font-2 pad-b-1-4 c-white"><%= entry.title %></a>
+        <span class="entry-date block font-3-4 c-lt-gray"><%= "Written on #{long_form_date(entry.created_at)}." %></span>
+        <p class="entry-stub"><%= stub(entry.body) %></p>
+      </li>
+    <% end %>
+  </ul>
+</main>

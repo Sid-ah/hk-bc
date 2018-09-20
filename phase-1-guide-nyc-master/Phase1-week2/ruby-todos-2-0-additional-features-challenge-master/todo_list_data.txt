@@ -1,0 +1,11 @@
+[X] Walk the cat.
+[X] Go to the gym.
+[X] Buy groceries for the week.
+[ ] Call Penelope.
+[ ] Finish code challenge.
+[ ] Book hotel for vacation.
+[X] Pay cable bill.
+[ ] Call insurance company.
+[ ] Read Ruby Under a Microscope.
+[ ] Book eye appointment for new glasses.
+[ ] Learn how to pick locks.

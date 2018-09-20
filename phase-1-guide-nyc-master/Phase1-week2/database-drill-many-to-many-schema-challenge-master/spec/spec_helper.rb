@@ -1,0 +1,7 @@
+require_relative '../user'
+require_relative '../product'
+require_relative '../review'
+require_relative '../favoriting'
+require_relative '../product_reviews_view'
+require_relative '../user_favoritings_view'
+require_relative '../user_reviews_view'

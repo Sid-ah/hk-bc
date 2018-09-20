@@ -1,0 +1,29 @@
+<% if !@user.nil? %>
+   <form class="" action="/users/<%= @user.id%>/decks/<%= @deck.id%>/cards/<%= @card.id %>" method="post">
+   <div>
+     <%= @card.question %>
+   </div>
+   <input type="text" name="guess_body" placeholder="Enter your answer" value="">
+   <input type="hidden" name="remaining_cards" value="<%= @remaining_cards%>">
+   <input type="hidden" name="round" value="<%= @round.id%>">
+   <% if !@user.nil? %>
+   <input type="hidden" name="user_id" value="<%= @user.id%>">
+   <% end %>
+   <input type="hidden" name="guess" value="<%= @guess %>">
+   <button type="submit" name="">Submit</button>
+   </form>
+ <% else %>
+   <form class="" action="/decks/<%= @deck.id%>/cards/<%= @card.id %>" method="post">
+   <div>
+     <%= @card.question %>
+   </div>
+   <input type="text" name="guess_body" placeholder="Enter your answer" value="">
+
+   <input type="hidden" name="remaining_cards" value="<%= @remaining_cards%>">
+   <input type="hidden" name="round" value="<%= @round.id%>">
+
+   <input type="hidden" name="guess" value="<%= @guess %>">
+   <button type="submit" name="">Submit</button>
+ </form>
+ <% end %>
+</div>

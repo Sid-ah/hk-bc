@@ -1,0 +1,14 @@
+<div class="container">
+
+  <%= @deck.category%>
+  <br>
+  Round end!
+  <br>
+  "The ratio of success is: <%= (@cards.deck_id.count/@round.guesses.count.to_f).round(3) * 100 %>%"
+  <br>
+  <%=@round.guesses.count%>
+  <br>
+  <% if !@user.nil? %>
+    <%= @user.rounds.count %>
+  <% end %>
+</div>

@@ -1,0 +1,24 @@
+<div class="container">
+
+  <section class="sidebar">
+    <h1>Call a Cheer</h1>
+
+    <form id="cheer_caller" action="/cheers" method="post">
+      <label for="cheer_name">Cheer name:</label>
+      <input type="text" name="cheer_name">
+      <input type="submit" value="Call it out!">
+    </form>
+  </section>
+
+  <main class="mascot">
+    <div class="sign-text-wrap">
+      <div class="sign-text">
+
+        <% if @sign_text %>
+          <span><%= @sign_text %></span>
+        <% end %>
+
+      </div>
+    </div>
+  </main>
+</div>

@@ -1,0 +1,204 @@
+<html op="item"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="news.css?gnq3p9tg373sX228QM6J">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script type="text/javascript">
+function hide(id) {
+  var el = document.getElementById(id);
+  if (el) { el.style.visibility = 'hidden'; }
+}
+function vote(node) {
+  var v = node.id.split(/_/);
+  var item = v[1];
+  hide('up_'   + item);
+  hide('down_' + item);
+  var ping = new Image();
+  ping.src = node.href;
+  return false;
+  }
+    </script><title>A&#x2F;B testing mistakes | Hacker News</title></head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="http://www.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="brandname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=item%3Fid%3D5003980">login</a>
+                          </span></td>
+              </tr></table></td></tr>
+<tr style="height:10px"></tr><tr><td><table border="0">
+        <tr class='athing'>
+      <td align="right" valign="top" class="title"><span class="rank"></span></td>      <td valign="top" class="votelinks"><center><a id="up_5003980" href="vote?for=5003980&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><span class="deadmark"></span><a href="http://visualwebsiteoptimizer.com/split-testing-blog/seven-ab-testing-mistakes-to-stop-in-2013/">A/B testing mistakes</a><span class="sitebit comhead"> (<a href="from?site=visualwebsiteoptimizer.com"><span class="sitestr">visualwebsiteoptimizer.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_5003980">53 points</span> by <a href="user?id=ankneo">ankneo</a> <span class="age"><a href="item?id=5003980">1224 days ago</a></span>  | <a href="https://hn.algolia.com/?query=A%2FB%20testing%20mistakes&sort=byDate&dateRange=all&type=story&storyText=false&prefix&page=0">past</a> | <a href="https://www.google.com/search?q=A%2FB%20testing%20mistakes">web</a> | <a href="item?id=5003980">18 comments</a>              </td></tr>
+        </table><br><br>
+  <table border="0" class='comment-tree'>  <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id="up_5004206" href="vote?for=5004206&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Jasber">Jasber</a> <span class="age"><a href="item?id=5004206">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">I recently implemented A/B testing on a client's site using one of these Javascript-based A/B testing tools (but not this one).<p>I hadn't used one before, so wanted to verify the data would actually be accurate.<p>I did an A/A test, basically testing the same exact page––expecting the results would be the same.<p>Not only were the results not the same, but they were off by a wide margin.<p>Given this, I don't know how I'm supposed to trust any of the data.<p>Has anyone else had experiences like this? Is A/B testing in Javascript just not as reliable?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id="up_5004623" href="vote?for=5004623&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jfarmer">jfarmer</a> <span class="age"><a href="item?id=5004623">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">"I did an A/A test, basically testing the same exact page––expecting the results would be the same."<p>That's not how A/B testing works. :)<p>Let's say we want to detect a 1% lift in some metric at 95% confidence and we set up an A/A test.  We do the math and it tells us we need to sample 1,000 people to reach 95% confidence on a 1% lift.<p>If we ran the A/A test 100 times, roughly 5 of them would show a statistically significant difference between the two groups.  That's what "95% confidence" means -- it means your false positive rate is 5%.  This is called a <i>Type I Error</i>.<p><a href="http://en.wikipedia.org/wiki/Type_I_and_type_II_errors" rel="nofollow">http://en.wikipedia.org/wiki/Type_I_and_type_II_errors</a><p>You could run a kind of meta-analysis and use the false positive rate as the variable you're measuring to see if there's a statistically significant difference between the %5 false positive rate you expect and the false positive rate the A/B testing software generates in practice.<p>In this case, your null hypothesis is that the "true alpha" of the A/B testing software is 0.05.  You'd sample from among all the 95% confidence tests you run and see whether you can reject the null hypothesis.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id="up_5005942" href="vote?for=5005942&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=btilly">btilly</a> <span class="age"><a href="item?id=5005942">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">There are a number of valid ways to run and analyze A/B tests.  Bayesian approaches look rather different than what you're describing.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id="up_5006200" href="vote?for=5006200&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jfarmer">jfarmer</a> <span class="age"><a href="item?id=5006200">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">The original commenter was using off-the-shelf A/B testing software, so the odds of it doing anything other than a simple t-test are virtually zero.  Not sure that the frequentist vs. Bayesean debate is the most relevant thing for him right now.<p>I felt it best to leave out nuance that didn't help him understand why his software was showing a statistically significant outcome for an A/A test.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id="up_5006358" href="vote?for=5006358&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=robrenaud">robrenaud</a> <span class="age"><a href="item?id=5006358">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">You are assuming the framework isn't broken or misconfigured.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks"><center><a id="up_5006549" href="vote?for=5006549&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jfarmer">jfarmer</a> <span class="age"><a href="item?id=5006549">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">You're not going to out-pedant me, damnit! :P<p>Given the original comment, yes, I think it's more likely he just didn't understand why a A/A test might sometimes show a false positive.<p>Even if the system were misconfigured, there's no reason to think it would manifest as a false positive in an A/A test.  There are lots of ways it could manifest.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+            <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id="up_5004274" href="vote?for=5004274&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=siddharthdeswal">siddharthdeswal</a> <span class="age"><a href="item?id=5004274">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">There's a very simple reason for that.<p>You're seeing a difference between Control and Variation in an A/A test is because a very small number of visitors have been tested. To explain, suppose you toss a coin 10 times and 7 out of those it shows heads. Just based on these 10 tosses, would you conclude that the coin is loaded? Probably not. Suppose you tossed the coin a 100 times, it'll probably show heads maybe 43 or 47 or 51 or 52 times.<p>Point being, as you toss it more and more, the number of times it shows a heads or tails comes closer and closer to 50% but you need to toss it a large number of times to be fairly certain that it isn't loaded. The more you toss it, the more certain you are. However, you'll only be more and more certain, but never completely certain. VWO works on a similar principle. The more number of times you toss up Control and Variation to visitors, the more certain you become of either being better, worse or equal to each other.<p>If you'll read the post, the graph shows the fluctuations in the beginning, after which things kind of settle down. In an A/A test, they'll settle down to a very similar conversion rate.<p>Here's an article from the VWO Knowledgebase that'll help you with running an A/B test correctly <a href="http://visualwebsiteoptimizer.com/knowledge/how-to-ideally-run-an-ab-split-test/" rel="nofollow">http://visualwebsiteoptimizer.com/knowledge/how-to-ideally-r...</a><span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id="up_5004529" href="vote?for=5004529&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=chc">chc</a> <span class="age"><a href="item?id=5004529">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">Some people actually suggest running A/A/B tests just to gauge how much noise is in their numbers, though that requires even more visitors to achieve statistical confidence since they're spread out among more options.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id="up_5004601" href="vote?for=5004601&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jfarmer">jfarmer</a> <span class="age"><a href="item?id=5004601">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">I've worked at companies that tried to do this before.  It makes no sense and shows the people running the A/B tests don't really understand the statistics behind A/B testing.<p>If I'm running an A/A test at 95% confidence and a sufficient number of visitors for whatever effect size I'm interested in, then 1 in 20 A/A tests will register a false positive.  That's what "95% confidence" means.  It does not mean there is "too much noise."<p>Moreover, in a proper A/B test, the A group and B group need to be independent and identically distributed.  So, in an A/A/B test, if the A/A disagree it <i>shouldn't tell you anything about B</i>.  That's what "independent" means.<p>If you want to be more confident you just increase your alpha.  alpha=0.05 is already too high for most consumer web apps anyhow, IMO, but go wild.  99% confidence!  Woo!<p>As a rule you want higher confidence when the cost of a mistake is high, e.g., this medicine gives people brain tumors!  Oops.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="160"></td><td valign="top" class="votelinks"><center><a id="up_5005473" href="vote?for=5005473&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=mjw">mjw</a> <span class="age"><a href="item?id=5005473">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">Perhaps you could view this "A/A/B" test as a very crude form of <a href="http://en.wikipedia.org/wiki/Bootstrapping_(statistics)" rel="nofollow">http://en.wikipedia.org/wiki/Bootstrapping_(statistics)</a> method? At least if you're resampling A1 and A2 from a pool A and then doing separate A1/B and A2/B tests and looking at how much the resulting statistic varies between the two runs.<p>Agreed this is a silly way to go about it, but there better-thought-out bootstrapped confidence tests which could be used if you don't fully trust the distributional assumptions behind (say) the t-test.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="200"></td><td valign="top" class="votelinks"><center><a id="up_5005637" href="vote?for=5005637&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=jfarmer">jfarmer</a> <span class="age"><a href="item?id=5005637">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">I wish! The words empirical distribution are music to my ears.<p>No, usually the rule people use is this: "If A1 and A2 show a statistically significant difference, then do not reject the null hypothesis regardless of A1/B or A2/B."<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id="up_5053260" href="vote?for=5053260&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=friendofasquid">friendofasquid</a> <span class="age"><a href="item?id=5053260">1214 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">I do this when I'm not confident I set up the experiment correctly. If the A's differ bit quite a bit, it's more likely I made a mistake than there's is normal  statistical variance. I make mistakes daily.<p>I think that's pretty sensible reason for A/A/B testing. Or A/B/B testing. Whatever you like.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="80"></td><td valign="top" class="votelinks"><center><a id="up_5004696" href="vote?for=5004696&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=Angostura">Angostura</a> <span class="age"><a href="item?id=5004696">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">&#62; You're seeing a difference between Control and Variation in an A/A test is because a very small number of visitors have been tested.<p>Well, we don't actually know how many samples the OP has, do we?<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="120"></td><td valign="top" class="votelinks"><center><a id="up_5006097" href="vote?for=5006097&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=siddharthdeswal">siddharthdeswal</a> <span class="age"><a href="item?id=5006097">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">True, we don't. But that is usually the reason for A/A tests throwing up different results (assuming of course, that the tool used to run the test is not flawed).<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+        <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id="up_5004288" href="vote?for=5004288&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=noelwelsh">noelwelsh</a> <span class="age"><a href="item?id=5004288">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">This is relevant: <a href="http://news.ycombinator.com/item?id=4997127" rel="nofollow">http://news.ycombinator.com/item?id=4997127</a><p>The answer is: it depends. How much data did you collect? How big was the difference you observed?<p>Javascript is less reliable than server-side tracking. There are lots of issues. Some people have Javascript turned off, though normally this is a small proportion. If people navigate away before the testing harness is loaded you can lose data. If you're testing elements that navigate away from the current page you can lose data if the harness is not implemented correctly (the browser will cancel pending requests when you navigate away).<p>I can't say what went wrong in your case but there is the potential for lots to go wrong.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id="up_5005936" href="vote?for=5005936&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=marcosdumay">marcosdumay</a> <span class="age"><a href="item?id=5005936">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">Congratulations, if you have statistical relevance on those numbers, you've just clustered your clients into too different populations.<p>Now, you just need to discover why one of the populations had better results than the other, and act acordingly. Don't forget to do actual A/B tests to verify your hypotesis.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+    <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="40"></td><td valign="top" class="votelinks"><center><a id="up_5004238" href="vote?for=5004238&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=orangethirty">orangethirty</a> <span class="age"><a href="item?id=5004238">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">May you provide more details? We could use your experience to shed some public light into how to interpret A/B testing data.<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+      <tr class='athing'><td><table border="0">  <tr><td class='ind'><img src="s.gif" height="1" width="0"></td><td valign="top" class="votelinks"><center><a id="up_5004627" href="vote?for=5004627&amp;dir=up&amp;goto=item%3Fid%3D5003980"><div class="votearrow" title="upvote"></div></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+          <a href="user?id=karolisd">karolisd</a> <span class="age"><a href="item?id=5004627">1224 days ago</a></span> <span class="par"></span><span class="deadmark"></span>          <span class='storyon'></span>
+                  </span></div><br><span class="comment">
+                  <span class="c00">8) Have a hypothesis of what you're testing and control for variables. Run a MVT test if you're changing a lot of things. If the test wins and it's implemented, everyone is happy and people don't ask too many questions. If it loses, what have you learned? Test a hypothesis.<p>If a client looks at a comp for a test and asks to change something, I always ask them, "What hypothesis are we testing with that change?"<span>
+              </span><div class='reply'>        <p><font size="1">
+                      <font color="#f6f6ef">-----</font>
+                  </font>
+      </div></td></tr>
+      </table></td></tr>
+  </table><br><br>
+</td></tr>
+<tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html">Bookmarklet</a>
+        | <a href="dmca.html">DMCA</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>      </table></center></body></html>

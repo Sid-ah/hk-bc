@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h2><%= headline(@game) %></h2>
+<p class="lead">
+  <i class="fa fa-5x <%= throw_fa_icon(@game.user_throw) %> text-<%= throw_color(@game.user_throw) %>"></i>
+  <span><strong><%= result_for_user_throw(@game) %></strong></span>
+  <i class="fa fa-5x <%= throw_fa_icon(@game.computer_throw) %> text-<%= throw_color(@game.computer_throw) %>"></i>
+</p>
+
+
+<p><%= link_to 'New Game', new_game_path %></p>
+<p><%= link_to 'Back', games_path %></p>

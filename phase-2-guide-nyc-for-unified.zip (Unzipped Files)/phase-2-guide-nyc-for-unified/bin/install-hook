@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+PHASE_ROOT="$(dirname $BASH_SOURCE)/.."
+PHASE_BIN_DIR="$PHASE_ROOT/bin"
+HOOKS_DIR="$PHASE_ROOT/.git/hooks"
+
+if [ -d "$HOOKS_DIR" ]; then
+  HOOKS_PATH="$(cd $HOOKS_DIR && pwd)"
+  if [ -d "$PHASE_BIN_DIR" ]; then
+    PHASE_BIN_PATH="$(cd $PHASE_BIN_DIR && pwd)"
+    echo "Linking $PHASE_BIN_PATH/pre-commit -> $HOOKS_PATH/pre-commit"
+    ln -s "$PHASE_BIN_PATH/pre-commit" "$HOOKS_PATH/pre-commit"
+  else
+    echo "Can't find phase guide bin directory, exiting."
+    echo "Looking for directory: $(pwd)/$PHASE_BIN_DIR"
+    exit 1
+  fi
+else
+  echo "Can't find .git directory, exiting."
+  echo "Looking for directory: $(pwd)/$HOOKS_DIR"
+  exit 1
+fi

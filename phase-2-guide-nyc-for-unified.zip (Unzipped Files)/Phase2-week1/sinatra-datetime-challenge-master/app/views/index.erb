@@ -1,0 +1,19 @@
+<main class="container landing">
+  <section class="landing-form col-2">
+    <h1>Broadcast Your Event to the World</h1>
+    <%= erb :"events/_form", locals: { event: @event } %>
+  </section>
+
+  <section class="todays-events blue-callout col-2">
+    <h1>Today's Events</h1>
+    <ul class="no-bullets todays-events-list">
+      <% @todays_events.each do |event| %>
+        <li class="todays-events-list-item">
+          <article>
+            <a href="/events/<%= event.id %>"><%= event.name %></a>
+          </article>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+</main>

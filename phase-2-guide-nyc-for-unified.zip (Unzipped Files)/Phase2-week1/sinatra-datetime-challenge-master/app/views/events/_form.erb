@@ -1,0 +1,16 @@
+<form method="post" action="<%= event_form_action(event) %>" class="lt-gray">
+  <% if event.persisted? %>
+    <input type="hidden" name="_method" value="put" />
+  <% end %>
+  <label for="name_input">Event Name:</label>
+  <input id="name_input" type="text" name="event[name]" value="<%= event.try(:name) %>" />
+
+  <label for="location_input">Event Location:</label>
+  <input id="location_input" name="event[location]" value="<%= event.try(:location) %>"/>
+
+  <label for="starts_at_input">Event Starting Date and Time:</label>
+  <input id="starts_at_input" type="text" name="event[starts_at]" value="<%= event_date_input_format(event.starts_at) %>" />
+  <span class="gray">Format: 2016-04-15 06:30 pm</span>
+
+  <input type="submit" value="<%= submit_button_value(event) %>" class="button bg-teal white-border mar-t-2"/>
+</form>

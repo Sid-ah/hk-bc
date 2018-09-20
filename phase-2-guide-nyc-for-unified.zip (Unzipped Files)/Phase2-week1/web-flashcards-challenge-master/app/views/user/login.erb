@@ -1,0 +1,20 @@
+<center>
+<div class="container">
+  <form class="" action="/user/login" method="post">
+      <center><h1>Log In</h1></center>
+      <%= erb :'_errors', layout: false %>
+      
+    <div class="">
+      <center><label for="username">Username</label></center>
+      <input type="text" name="user[username]" value="" id='username'>
+    </div>
+
+    <div class="">
+    <center><label for="password">Password</label></center>
+      <input type="password" name="user[password]" value="" id='password'>
+    </div>
+
+    <center><input type="submit" name="" value="Login"></center>
+  </form>
+</div>
+</center>

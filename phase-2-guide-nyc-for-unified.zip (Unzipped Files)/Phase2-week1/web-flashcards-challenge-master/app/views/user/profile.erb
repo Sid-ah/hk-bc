@@ -1,0 +1,14 @@
+<h1> Welcome back <%= current_user.username %>!</h1>
+<h1>Here are your stats form previous games:</h1>
+<table style="width:80%">
+<% @user.rounds.each_with_index do |round, i|%>
+  <tr>
+    <th>Round</th>
+    <th>Deck</th>
+    <th>Guesses</th>
+  </tr>
+  <td><%= i %></td>
+  <td><%= Deck.find_by(id: round[:deck_id]).name %></td>
+  <td><%= round.guesses.count%></td>
+  <% end %>
+</table>

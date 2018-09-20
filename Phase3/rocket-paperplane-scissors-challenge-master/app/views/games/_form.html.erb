@@ -1,0 +1,6 @@
+<%= form_for(@game, html: { class: 'form-inline new_game' }) do |f| %>
+    <%= f.hidden_field :user_throw, value: throw %>
+    <button id="throw-<%= throw %>" class="btn btn-<%= throw_color(throw) %> btn-lg">
+        <i class="fa fa-5x <%= throw_fa_icon(throw) %>"></i>
+      </button>
+<% end %>

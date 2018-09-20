@@ -1,0 +1,14 @@
+<h1>Entry Details</h1>
+
+<main class="content-wrapper" role="main">
+  <p><%= @entry.singer %> signed up to sing <%= @entry.song_title %>.</p>
+
+  <p>
+    Entry submitted on <%= @entry.created_at.strftime("%B %-d at %l:%M %p") %>.
+
+    <% if @entry.created_at != @entry.updated_at %>
+      Entry updated on <%= @entry.updated_at.strftime("%B %-d at %l:%M %p") %>.
+    <% end %>
+  </p>
+
+</main>

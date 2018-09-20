@@ -1,0 +1,60 @@
+{
+  "week1": {
+    "day1": {
+      "core": [
+        "sinatra-to-rails-pick-1-of-3-challenge",
+        "phase-3-rspec-intro-challenge"
+      ]
+    },
+    "day2": {
+      "core": [
+        "rocket-paperplane-scissors-challenge",
+        "tdd-favorite-songs-rails-challenge"
+      ]
+    },
+    "day3": {
+      "core": [
+        "client-project-challenge"
+      ]
+    },
+    "day4": {
+      "core": [
+
+      ]
+    },
+    "day5": {
+      "core": [
+
+      ]
+    },
+    "pre-work": {
+      "core": [
+        "rails-blog-challenge"
+      ]
+    },
+    "weekend": {
+      "core": [
+
+      ]
+    }
+  },
+  "week2": {
+    "day1": {
+      "core": [
+        "256-challenge"
+      ]
+    },
+    "day2": {
+      "core": [
+        "markdown-widget-challenge",
+        "jasmine-mvc-challenge"
+      ]
+    },
+    "day3": {
+      "core": [
+        "lil-twitter-challenge",
+        "lil-twitter-react-challenge"
+      ]
+    }
+  }
+}

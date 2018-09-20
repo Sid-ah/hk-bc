@@ -1,0 +1,64 @@
+h1 {
+  margin: 0 0 1em 0;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: .5em 0 1em 0;
+  padding: .25em;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  padding: .4em;
+}
+
+main {
+  width: 500px;
+  min-height: 500px;
+  float: right;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1em 0 0 0;
+  width: 800px;
+  overflow: auto;
+}
+
+.sidebar {
+  width: 240px;
+  float: left;
+}
+
+.mascot {
+  background-image: url("/images/mascot.png");
+  position: relative;
+}
+
+.sign-text-wrap {
+  position: absolute;
+  width: 260px;
+  height: 130px;
+  top: 240px;
+  left: 110px;
+  -ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Safari */
+    transform: rotate(2deg);
+}
+
+.sign-text {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1em;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+

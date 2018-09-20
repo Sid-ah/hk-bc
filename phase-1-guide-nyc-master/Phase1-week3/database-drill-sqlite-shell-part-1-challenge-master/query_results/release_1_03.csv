@@ -1,0 +1,11 @@
+part_id,part_name,invoice_number,supplier_name,ordered_on,expected_on,received_on,days_late
+80,"Small Marble Chair",23241cb5,Bednar-King,2016-05-10,2016-05-16,,
+80,"Small Marble Chair",a69d49c4,"Marquardt, Trantow and Raynor",2016-05-10,2016-05-20,2016-05-18,-2.0
+80,"Small Marble Chair",c0b136d6,"Thiel Inc",2016-05-10,2016-05-30,2016-05-27,-3.0
+80,"Small Marble Chair",59d92cc3,"Yundt Group",2016-05-09,2016-05-28,2016-05-27,-1.0
+80,"Small Marble Chair",9e810e29,"Schoen LLC",2016-05-08,2016-05-22,2016-05-23,1.0
+80,"Small Marble Chair",c8e7d196,Shanahan-Runte,2016-05-08,2016-05-24,,
+80,"Small Marble Chair",549c7076,"Keeling Group",2016-05-08,2016-05-29,2016-05-28,-1.0
+80,"Small Marble Chair",4d21e510,Schamberger-Leuschke,2016-05-07,2016-05-18,,
+80,"Small Marble Chair",4d21e510,Schamberger-Leuschke,2016-05-07,2016-05-18,2016-05-18,0.0
+80,"Small Marble Chair",16455c21,Bednar-King,2016-05-06,2016-05-16,2016-05-13,-3.0

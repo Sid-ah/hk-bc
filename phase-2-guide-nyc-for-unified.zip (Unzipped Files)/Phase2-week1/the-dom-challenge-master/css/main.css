@@ -1,0 +1,77 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 6em;
+}
+
+.wordmark {
+  font-size: 8em;
+  font-family: 'Slackey', cursive;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #21698F;
+  margin: 0;
+}
+
+.main-heading {
+  font-size: 4em;
+  margin: 0 0 .25em 0;
+}
+
+.fish-list {
+  padding: 0;
+  maring: 0;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.fish-list-card {
+  width: 31.33%;
+  margin: 0 1%;
+  border-radius: .5em;
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+
+.fish-list-card-name {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.fish-list-card-image {
+  width: 100%;
+}
+
+.blue {
+  background-color: #ACD7EE;
+  color: #21698F;
+}
+
+.light {
+  background-color: white;
+  color: #21698F;
+}

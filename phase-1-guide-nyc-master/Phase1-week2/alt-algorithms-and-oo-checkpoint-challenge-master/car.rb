@@ -1,0 +1,3 @@
+class Car
+  # I need to encapsulate these objects inside the dealership...
+end

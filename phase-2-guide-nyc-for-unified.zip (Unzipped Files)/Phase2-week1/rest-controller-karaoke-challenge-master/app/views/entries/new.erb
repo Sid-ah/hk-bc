@@ -1,0 +1,26 @@
+<h1>Sign Up to Karaoke</h1>
+
+<main class="form-wrapper" role="main">
+
+  <% if @errors %>
+    <div class="errors-wrapper">
+      <span>Your entry could not be saved:</span>
+      <ul class="errors">
+        <% @errors.each do |error| %>
+          <li class="error"><%= error %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <form method="post" action="create-new-post">
+    <label for="singer_name_input">Singer name:</label>
+    <input id="singer_name_input" name="entry[singer]" type="text" value="<%= @entry.try(:singer) %>">
+
+    <label for="song_title_input">Song title:</label>
+    <input id="song_title_input" name="entry[song_title]" type="text" value="<%= @entry.try(:song_title) %>">
+
+    <input type="submit" value="Put me on the List!" class="button">
+  </form>
+</main>

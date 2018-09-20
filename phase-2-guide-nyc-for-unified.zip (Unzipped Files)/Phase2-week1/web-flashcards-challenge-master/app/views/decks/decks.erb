@@ -1,0 +1,19 @@
+<div class='container'>
+
+	<header><!-- Login info in header --></header>
+
+	<p><%= @the_card.question %></p>
+	<form action="/decks/<%=@deck.id%>/cards/<%= @cards.first.id %>" method="post">
+
+	<input placeholder="Enter Guess" name="guess_body" id="guess_body" type="text" class="validate">
+
+	<!-- <label name='guess_body'>Guess</label>
+	<input type="text" name="guess_body"> -->
+
+	<!-- <input type="text" name="guess_body"> -->
+		
+	</form>
+	<!-- will find a card by random id -->
+	<!-- we have all cards / guesses. if any  -->
+
+</div>

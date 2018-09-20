@@ -1,0 +1,31 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+  text-align: center;
+}
+
+th {
+  text-align: left;
+}
+
+a#roll {
+  padding: 5px;
+  background-color: #ccc;
+  border: 1px solid #222;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+.die {
+  font-size: 2em;
+  padding: 20px;
+}
+
+.roll {
+  border: solid 2px #666;
+  padding: 20px;
+  background-color: orange;
+}

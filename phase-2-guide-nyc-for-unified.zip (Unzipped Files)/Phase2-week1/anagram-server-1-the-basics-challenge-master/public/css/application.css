@@ -1,0 +1,55 @@
+/* *       - https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+/* :after  - https://developer.mozilla.org/en-US/docs/Web/CSS/%3A%3Aafter*/
+/* :before - https://developer.mozilla.org/en-US/docs/Web/CSS/%3A%3Abefore */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+header {
+  padding: 2em 0;
+  line-height: 2em;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  padding-right: .5em;
+}
+
+  nav li:last-of-type {
+    padding-right: 0;
+  }
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.wrap-float {
+  overflow: auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

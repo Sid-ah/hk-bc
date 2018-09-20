@@ -1,0 +1,19 @@
+<article class="event-card-data round bg-white gray">
+  <h1 class="flex-fill blue">
+    <a href="/events/<%= event.id %>" class="blue">
+      <%= event.name %>
+    </a>
+  </h1>
+
+  <p>
+    <%= event.location %>
+  </p>
+  <p>
+    <%= date_and_time(event.starts_at) %>
+  </p>
+
+  <div class="event-card-buttons">
+    <a href="/events/<%= event.id %>/edit" class="button event-card-button">Edit</a>
+    <%= erb :"events/_delete_event_form", locals: { event: event } %>
+  </div>
+</article>

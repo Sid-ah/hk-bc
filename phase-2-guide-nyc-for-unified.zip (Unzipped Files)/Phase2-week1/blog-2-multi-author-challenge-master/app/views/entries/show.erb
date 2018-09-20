@@ -1,0 +1,18 @@
+<h1><%= @entry.title %></h1>
+
+<span class="entry-date block font-3-4 c-lt-gray"><%= "Written on #{long_form_date(@entry.created_at)}." %></span>
+
+<p><%= @entry.body %></p>
+
+<ul class="no-bullets no-padding mar-t-2">
+  <li class="pipe-separate left">
+    <a href="/entries/<%= @entry.id %>/edit" class="c-white">edit</a>
+  </li>
+
+  <li class="pipe-separate left">
+    <form method="post" action="/entries/<%= @entry.id %>" class="inline">
+      <input type="hidden" name="_method" value="delete">
+      <input type="submit" value="delete" class="no-border no-outline no-bg c-white hover-underline">
+    </form>
+  </li>
+</ul>

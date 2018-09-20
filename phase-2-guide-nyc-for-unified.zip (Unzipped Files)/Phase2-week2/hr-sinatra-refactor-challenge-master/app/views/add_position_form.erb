@@ -1,0 +1,20 @@
+<h1>Add Position for <%=@user.name%></h1>
+
+<form action="/create_position/<%=@user.id%>" method="GET">
+  <p>
+    <label name="title">Title</label>
+    <input name="title" type="text"/>
+  </p>
+  <p>
+    <label name="started_at">Started Date</label>
+    <input name="started_at" type="text" placeholder="Must be in the form of 2001-02-03"/>
+  </p>
+  <p>
+    <label name="salary">Salary</label>
+    <input name="salary" type="text"/>
+  </p>
+
+  <p>
+    <input type="submit"/>
+  </p>
+</form>

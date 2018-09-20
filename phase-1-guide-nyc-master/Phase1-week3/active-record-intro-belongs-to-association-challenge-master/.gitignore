@@ -1,0 +1,5 @@
+.DS_Store
+.DS_Store?
+db/*.sqlite3
+db/*.db
+*/*-solved.rb

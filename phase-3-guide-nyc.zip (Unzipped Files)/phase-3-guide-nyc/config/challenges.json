@@ -1,0 +1,38 @@
+{
+  "week-7": {
+    "monday": [
+      "sinatra-to-rails-pick-1-of-3-challenge",
+      "phase-3-rspec-intro-challenge"
+    ],
+    "tuesday": [
+      "rocket-paperplane-scissors-challenge",
+      "tdd-favorite-songs-rails-challenge"
+    ],
+    "wednesday": [
+      "lil-twitter-react-challenge"
+    ],
+    "thursday": [
+
+    ],
+    "friday": [
+
+    ],
+    "weekend": [
+
+    ],
+    "pre-work": [
+      "rails-blog-challenge"
+    ]
+  },
+  "week-8": {
+    "monday": [
+      "client-project-challenge"
+    ],
+    "tuesday": [
+
+    ],
+    "wednesday": [
+
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+<div class="container">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <h1>Welcome to the Flash Card Game!</h1>
+  <p>Hello, world!</p>
+<div class="">
+   <i class="material-icons">contact_phone</i>
+  <a href="/user/new"> Sign Up </a>
+</div>
+
+ <i class="material-icons">language</i>
+<a href="/user/login"> Sign In </a>
+
+<br><br>
+<div>
+  <% Deck.all.each do |deck| %>
+  <li>
+  <a href="decks/<%= deck.id %>"><%= deck.category %></a>
+  </li>
+  <% end %>
+</div>
